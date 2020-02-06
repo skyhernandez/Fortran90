@@ -11,8 +11,8 @@ C/ Executing: /
 C/ ./Pointers /
 C/====|================================================================/
       PROGRAM Pointers
-CC
-C To make use of pointers you must use an Interface before assigning
+C
+CC To make use of pointers you must use an Interface before assigning
 CC variables/arrays.
 C
       INTERFACE
@@ -20,18 +20,18 @@ C
       REAL*4, DIMENSION(:), POINTER :: ptr2array
       END SUBROUTINE AllocateAPointer
       END INTERFACE
-CC
-C Assigning an allocatable array as a pointer.
+C
+CC Assigning an allocatable array as a pointer.
 C
       REAL*4, DIMENSION(:), POINTER :: ptr2array
 CALL AllocateAPointer(ptr2array)
-CC
-C Setting the array without having to allocate it before hand.
+C
+CC Setting the array without having to allocate it before hand.
 C
       ptr2array(1) = 1
       ptr2array(10) = 10
-CC
-C Print out the array values.
+C
+CC Print out the array values.
 C
       WRITE(*,*) ptr2array
       END PROGRAM
@@ -44,4 +44,3 @@ C/=====================================================================/
         ALLOCATE(array(10), STAT = istatus)
       END SUBROUTINE
 C/=====================================================================/
--
