@@ -10,50 +10,50 @@ C/ ./FileIO /
 C/====|================================================================/
       PROGRAM FileIO
       implicit none
-CC
-C Initialize the variables.
+C
+CC Initialize the variables.
 C
       integer*4 a, b, c, u, v
       integer*4 ra, rb, rc, rra, rrb, rrc
-CC
-C Define the variables.
+C
+CC Define the variables.
 C
       a = 5
       b = 12
       c = a + b
-CC
-C Write the vriables to the screen.
+C
+CC Write the vriables to the screen.
 C
       write(*,'(A,I2)') 'a = ',a ,'b = ', b, 'c = ', c
-CC
-C Open a file nicknamed u, which will be named read.dat
+C
+CC Open a file nicknamed u, which will be named read.dat
 C
       open(unit=u, file= 'read.dat')
-CC
-C Write to the file
+C
+CC Write to the file
 C
       write(u,'(I4,I4,I4)') a, b, c
       write(u,'(I4)') a, b, c
-CC
-C Close to save the data of the file
+C
+CC Close to save the data of the file
 C
       close(u)
-CC
-C We will begin to read the file read.dat. In order to do that
+C
+CC We will begin to read the file read.dat. In order to do that
 CC we need to reopen the file, and then use the read function.
 C
       open(unit=u, file= 'read.dat')
-CC
-C Read in the file read.dat
+C
+CC Read in the file read.dat
 C
       read(u,*, end = 10) ra, rb, rc, rra, rrb, rrc
-CC
-C Print read variables onto the screen, to make sure we got it.
+C
+CC Print read variables onto the screen, to make sure we got it.
 C
 10 write(*,110) ra, rb, rc, rra, rrb, rrc
 110 format(I2)
-CC
-C Openeing a new file call reed.dat and make a copy of read.dat,
+C
+CC Openeing a new file call reed.dat and make a copy of read.dat,
 CC but adding 100 to each variable.
 C
       open(unit=v, file ='reed.dat')
@@ -65,8 +65,8 @@ C
       rrc = rrc + 100
       write(v,120) ra, rb, rc, rra, rrb, rrc
 120 format(I3)
-CC
-C Close file.
+C
+CC Close file.
 C
 close(u)
 close(v)
