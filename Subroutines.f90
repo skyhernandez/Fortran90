@@ -10,39 +10,39 @@ C/ ./Subroutines /
 C/====|================================================================/
       PROGRAM Subroutines
       implicit none
-CC
-C Define the two parameter values single and double. These values
+C
+CC Define the two parameter values single and double. These values
 CC never change in the program
 C
       integer*4, parameter :: single = 4, double = 8
-CC
-C Define a bunch of variables.
+C
+CC Define a bunch of variables.
 C
       integer i, k, npts, status
       integer InOutFcn, InOutSub, InFcn, InSub
       integer FcnMyInCircle
       real(kind=single) D
       real(kind=double) PiFcn, PiSub
-CC
-C Define three allocatable arrays.
+C
+CC Define three allocatable arrays.
 C
       integer(kind=single), allocatable, dimension(:) :: seedints
       real(kind=single), allocatable, dimension(:) :: x, y
-CC
-C Set the size of the allocatable array.
+C
+CC Set the size of the allocatable array.
 C
       write(*,*) 'Enter the number of points'
       read(*,*) npts
       write(*,*) 'Number of points entered: ', npts
-CC
-C Allocate the allocatable array.
+C
+CC Allocate the allocatable array.
 C
       allocate(x(npts), stat= status)
       write(*,*) 'Allocation status for x = ', status
       allocate(y(npts), stat= status)
       write(*,*) 'Allocation status for y = ', status
-CC
-C Processor sets the random seed using intrinsic subroutine random_seed
+C
+CC Processor sets the random seed using intrinsic subroutine random_seed
 C
       call random_seed
 C
@@ -50,42 +50,42 @@ CC Get number of integers used to set the seed using Intrinsic Subroutine
 CC RANDOM_SEED.
 C
       call random_seed (size = k)
-CC
-C Allocate seedints.
+C
+CC Allocate seedints.
 C
       allocate(seedints(k), STAT=status)
-CC
-C Get integers used to set the see using Intrinsic subroutine
+C
+CC Get integers used to set the see using Intrinsic subroutine
 CC RANDOM_SEED.
 C
       call random_seed (get = seedints(1:k))
-CC
-C Print the seed information.
+C
+CC Print the seed information.
 C
 C print *,k
       DO i = 1, k, 1
 C print *, seedints(i)
       END DO
-CC
-C Retrieve a pile of random numbers using the intrinsic subroutine
+C
+CC Retrieve a pile of random numbers using the intrinsic subroutine
 CC RANDOM_NUMBER.
 C
       call random_number(x)
       call random_number(y)
-CC
-C Subtract 0.5 from both sets of numbers x andy. Here we use an
+C
+CC Subtract 0.5 from both sets of numbers x andy. Here we use an
 CC advanced feature of fortran 90.
 C
       x = x - 0.5
-CC
-C and here we do it with a brute force loop.
+C
+CC and here we do it with a brute force loop.
 C
       DO i = 1, npts, 1
          y(i) = y(i) - 0.5
 C write(*,*) y(i), x(i)
       END DO
-CC
-C Estimate the value of pi using a function and a subroutine.
+C
+CC Estimate the value of pi using a function and a subroutine.
 C
       DO i = 1, npts, 1
 C write(*,*) '**********************************'
@@ -103,8 +103,8 @@ C write(*,*) '**********************************'
       PiFcn = ((1.0D0*InFcn)/npts)/(0.5D0*0.5D0)
       PiSub = ((1.0D0*InSub)/npts)/(0.5D0*0.5D0)
       write(*,*) 'Pi = ', PiFcn, PiSub
-CC
-C Deallocate the arrays.
+C
+CC Deallocate the arrays.
 C
       deallocate(x, STAT=status)
       deallocate(y, STAT=status)
