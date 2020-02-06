@@ -8,22 +8,22 @@ C/ Version: 1.0.0 /
 C/ Executing: /
 C/ ./TypesConstantsVariables /
 C/====|================================================================/
-CC
-C Starting up a program
+C
+CC Starting up a program
 C
       program TypesConstantsVariables
-CC
-C A varaible must be defined to be used
+C
+CC A varaible must be defined to be used
 C
       implicit none
-CC
-C Define the two parameters values single and double. These values
+C
+CC Define the two parameters values single and double. These values
 CC never change in the program.
 C
       integer*4, parameter :: single = 4
       integer*4, parameter :: double = 8
-CC
-C Define a bunch of variables with different types, some redundant.
+C
+CC Define a bunch of variables with different types, some redundant.
 C
       integer*4 intvarstar4
       integer*8 intvarstar8
@@ -33,8 +33,8 @@ C
       real*8 floatvarstar8
       real(kind=double) :: floatvardouble
       character(len=256) :: filename
-CC
-C Variable assignments followed by write statements to the screen.
+C
+CC Variable assignments followed by write statements to the screen.
 C
       floatvarstar4 = 1
       intvarstar4 = 1
@@ -63,8 +63,8 @@ C
       write(*,"(I16)") intvardouble
       filename = 'wrfout_d01'
       write(*,"(A30)") filename
-CC
-C Ending the program
+C
+CC Ending the program
 C
       end
 C/=====================================================================/
