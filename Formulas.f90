@@ -11,37 +11,37 @@ C/ ./Formulas /
 C/====|================================================================/
       PROGRAM Formulas
       implicit none
-CC
-C Define the two paramters values single and double. These values
+C
+CC Define the two paramters values single and double. These values
 CC never change in the program.
 C
       integer*4, parameter :: single = 4
       integer*4, parameter :: double = 8
       integer*4, parameter :: arrsize = 100
       integer*4, nlats, nlons, status
-CC
+C
 C Define a fixed length arrays.
 C
       real(KIND=double), dimension(100,100) :: floatarraydouble
-CC
-C Define one allocatable array.
+C
+CC Define one allocatable array.
 C
       real(KIND=single), ALLOCATABLE, dimension(:,:) :: floatarray
-CC
-C Set the size of the allocatable arrays.
+C
+CC Set the size of the allocatable arrays.
 C
       nlats = 35
       nlons = 70
-CC
-C Allcoate the array.
+C
+CC Allcoate the array.
 C
       ALLOCATE(floatarray(nlats,nlons), STAT=status)
 CC
-C Write to standard output the value of status.
+CC Write to standard output the value of status.
 C
       write(*,*) 'ALLOCATION STATUS = ', status
-CC
-C Write to standard output some of the array values.
+C
+CC Write to standard output some of the array values.
 C
       floatarray(35,70) = 2.0 * 5.0
       floatarray(35,69) = 2.0 * nlats
@@ -60,8 +60,8 @@ C
       floatarraydouble(1,2) = dlog(100.) ! 'd' before function for
 ! double percision
       floatarraydouble(1,3) = dexp(floatarraydouble(1,2))
-CC
-C Write to standard output some of the array values.
+C
+CC Write to standard output some of the array values.
 C
       write(*,*) floatarray(35,70)
       write(*,*) floatarray(35,69)
