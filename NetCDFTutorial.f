@@ -1,43 +1,29 @@
 C/*********************************************************************/
-C/*********************************************************************/
 C/* */
 C/* NetCDF Users Guide: Perform a search for NetCDF at www.google.com */
-C/* */
 C/* The second hit will be the Web site: */
-C/* */
 C/* http://www.unidata.ucar.edu/software/netcdf/guide_toc.html */
-C/* */
 C/* This is a manual straight from the horse's mouth, so to speak. */
 C/* It is all you need to become an expert on the NetCDF data format */
 C/* and to write beautiful NetCDF FORTRAN file access software as a */
 C/* result. */
-C/* */
 C/*-------------------------------------------------------------------*/
 C/* */
 C/* Software Rules for the NetCDF exercise: */
-C/* */
 C/* 1) Your code must compile, run and produce correct results. */
-C/* */
 C/* 2) Your code must be beautifully and extensively documented, */
 C/* similar in detail to this piece of code. */
-C/* */
 C/* 3) Do not use fixed length arrays. Use only allocatable ones. */
-C/* */
 C/* 4) Print to an ASCII status file, which is independent of your */
 C/* ASCII data file, the following: */
-C/ i) Number of dimensions, their IDs, names, and values. */
-C/* ii) Number of variables, their IDs and names. */
-C/* */
+C/      i) Number of dimensions, their IDs, names, and values. */
+C/*    ii) Number of variables, their IDs and names. */
 C/* 5) Print the variable data to an ASCII data file in such a way */
 C/* that facilitates data conversion to the GRIB file format. */
-C/* */
 C/* 6) Items 4) and 5) above must be done with DO LOOPS. */
-C/* */
 C/*-------------------------------------------------------------------*/
-C/* */
 C/* This tutorial example was written by Eugene Clothiaux on */
 C/* September 24, 2008. */
-C/* */
 C/*********************************************************************/
       PROGRAM NetCDFTutorial
 C /*------------------------------------------------------------*/
@@ -72,11 +58,9 @@ C /*------------------------------------------------------------*/
       3 ngatts, ! Number of NetCDF global attributes
       4 recdim ! Record dimenions of NetCDF file
 C /*------------------------------------------------------------*/
-C /* */
 C /* Make sure one command line argument is passed into the */
 C /* program. The command line argument must be the NetCDF */
 C /* file with a path attached to it. */
-C /* */
 C /* To learn more about FUNCTION IARGC and SUBROUTINE GETARG */
 C /* please go to */
 C /* http://gcc.gnu.org/onlinedocs/gfortran/IARGC.html */
@@ -85,7 +69,6 @@ C /* http://gcc.gnu.org/onlinedocs/gfortran/GETARG.html */
 C /* The location of these two Web sites is courtesy of Andy */
 C /* Beck, who found them through a Web forum discussion of */
 C /* some sort. */
-C /* */
 C /*------------------------------------------------------------*/
 !/* Retrieve the number of command line arguments. */
       nargs = IARGC()
@@ -138,5 +121,4 @@ C /*------------------------------------------------------------*/
 C /* DONE processing the NetCDF file. */
 C /*------------------------------------------------------------*/
       END
-C/*********************************************************************/
 C/*********************************************************************/
