@@ -1,13 +1,13 @@
 C/=====================================================================/
-C/ Formulas.f90 /
+C/ Formulas.f90                                                        /
 C/=====================================================================/
-C/ A fortran code with examples of types, constants, and variables in /
-C/ arrays using formulas. /
+C/ A fortran code with examples of types, constants, and variables in  /
+C/ arrays using formulas.                                              /
 C/=====================================================================/
-C/ Date: 9/03/08 /
-C/ Version: 1.0.0 /
-C/ Executing: /
-C/ ./Formulas /
+C/ Date: 9/03/08                                                       /
+C/ Version: 1.0.0                                                      /
+C/ Executing:                                                          /
+C/ ./Formulas                                                          /
 C/====|================================================================/
       PROGRAM Formulas
       implicit none
@@ -81,5 +81,5 @@ C
       write(*,*) floatarraydouble(1,3)
       END
 C/=====================================================================/
-C/ End of program /
+C/ End of program                                                      /
 C/=====================================================================/
