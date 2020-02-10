@@ -1,14 +1,14 @@
 C/=====================================================================/
-C/ Pointers.f90 /
+C/ Pointers.f90                                                        /
 C/=====================================================================/
-C/ A fortran code on how to use pointers. Pointers allow you to /
+C/ A fortran code on how to use pointers. Pointers allow you to        /
 C/ allow you to allocate and deallocate within a subroutine and not in /
-C/ the main code. /
+C/ the main code.                                                      /
 C/=====================================================================/
-C/ Date: 11/5/08 /
-C/ Version: 1.0.0 /
-C/ Executing: /
-C/ ./Pointers /
+C/ Date: 11/5/08                                                       /
+C/ Version: 1.0.0                                                      /
+C/ Executing:                                                          /
+C/ ./Pointers                                                          /
 C/====|================================================================/
       PROGRAM Pointers
 C
@@ -36,7 +36,7 @@ C
       WRITE(*,*) ptr2array
       END PROGRAM
 C/=====================================================================/
-C/ SUBROUTINE AllocateAPointer /
+C/ SUBROUTINE AllocateAPointer                                         /
 C/=====================================================================/
       SUBROUTINE AllocateAPointer(array)
         INTEGER*4, istatus
