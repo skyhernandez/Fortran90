@@ -1,13 +1,13 @@
 C/=====================================================================/
-C/ Arrays.f90 /
+C/ Arrays.f90                                                          /
 C/=====================================================================/
-C/ A fortran code with examples of types, constants, and variables in ?
-C/ arrays. /
+C/ A fortran code with examples of types, constants, and variables in ?/
+C/ arrays.                                                             /
 C/=====================================================================/
-C/ Date: 9/03/08 /
-C/ Version: 1.0.0 /
-C/ Executing: /
-C/ ./Arrays /
+C/ Date: 9/03/08                                                       /
+C/ Version: 1.0.0                                                      /
+C/ Executing:                                                          /
+C/ ./Arrays                                                            /
 C/====|================================================================/
       PROGRAM Arrays
       implicit none
@@ -74,5 +74,5 @@ C
       write(*,*) floatarray(35,70)
       END
 C/=====================================================================/
-C/ End of program /
+C/ End of program                                                      /
 C/=====================================================================/
