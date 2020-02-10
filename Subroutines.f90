@@ -1,12 +1,12 @@
 C/=====================================================================/
-C/ Subroutines.f90 /
+C/ Subroutines.f90                                                     /
 C/=====================================================================/
-C/ A fortran code with subroutines. /
+C/ A fortran code with subroutines.                                    /
 C/=====================================================================/
-C/ Date: 9/05/08 /
-C/ Version: 1.0.0 /
-C/ Executing: /
-C/ ./Subroutines /
+C/ Date: 9/05/08                                                       /
+C/ Version: 1.0.0                                                      /
+C/ Executing:                                                          /
+C/ ./Subroutines                                                       /
 C/====|================================================================/
       PROGRAM Subroutines
       implicit none
@@ -110,10 +110,11 @@ C
       deallocate(y, STAT=status)
       END
 C/=====================================================================/
-C/ End of program /
+C/ End of program                                                      /
 C/=====================================================================/
+
 C/=====================================================================/
-C/ Function FcnMyInCircle /
+C/ Function FcnMyInCircle                                              /
 C/=====================================================================/
       integer function FcnMyInCircle(xin, yin)
         implicit none
@@ -128,7 +129,7 @@ C/=====================================================================/
         return
       end function FcnMyInCircle
 C/=====================================================================/
-C/ Subroutine SubMyInCircle /
+C/ Subroutine SubMyInCircle                                            /
 C/=====================================================================/
       subroutine SubMyInCircle(xin, yin, inout, d)
         implicit none
