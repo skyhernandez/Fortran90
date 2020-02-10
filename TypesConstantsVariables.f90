@@ -1,12 +1,12 @@
 C/=====================================================================/
-C/ TypesConstantsVariables.f90 /
+C/ TypesConstantsVariables.f90                                         /
 C/=====================================================================/
-C/ A fortran code with examples of types, constants, and variables. /
+C/ A fortran code with examples of types, constants, and variables.    /
 C/=====================================================================/
-C/ Date: 8/27/08 /
-C/ Version: 1.0.0 /
-C/ Executing: /
-C/ ./TypesConstantsVariables /
+C/ Date: 8/27/08                                                       /
+C/ Version: 1.0.0                                                      /
+C/ Executing:                                                          /
+C/ ./TypesConstantsVariables                                           /
 C/====|================================================================/
 C
 CC Starting up a program
@@ -68,5 +68,5 @@ CC Ending the program
 C
       end
 C/=====================================================================/
-C/ End of program /
+C/ End of program                                                      /
 C/=====================================================================/
