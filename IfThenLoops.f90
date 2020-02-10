@@ -1,12 +1,12 @@
 C/=====================================================================/
-C/ IfThenLoops.f90 /
+C/ IfThenLoops.f90                                                     /
 C/=====================================================================/
-C/ A fortran code with if then statements. /
+C/ A fortran code with if then statements.                             /
 C/=====================================================================/
-C/ Date: 8/29/08 /
-C/ Version: 1.0.0 /
-C/ Executing: /
-C/ ./IfThenLoops /
+C/ Date: 8/29/08                                                       /
+C/ Version: 1.0.0                                                      /
+C/ Executing:                                                          /
+C/ ./IfThenLoops                                                       /
 C/====|================================================================/
       PROGRAM IfThenLoops
       implicit none
@@ -82,5 +82,5 @@ C
 ! program
       END
 C/=====================================================================/
-C/ End of program /
+C/ End of program                                                      /
 C/=====================================================================/
