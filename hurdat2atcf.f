@@ -6,7 +6,7 @@ C  widely used ATCF format.
 C=======================================================================
 C  @date   : 12/22/08
 C  @version: 1.0.0
-C  @author : Michael Kevin Hernandez
+C  @author : Skylar Hernandez
 C  @email  : mkh182@psu.edu
 C
 C  @running: ./hurdat2atcf hurdat
