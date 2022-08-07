@@ -63,7 +63,7 @@ C RHO      = Density * 1000
 C
 C========================================================================
 C @ program: NetCDF2GRIB_V4.f
-C @ author : Michael Kevin Hernandez, Erica Collura, and Shelly Guare
+C @ author : Skylar Hernandez, Erica Collura, and Shelly Guare
 C @ email  : mkh182@psu.edu, elc5046@psu.edu, sag5085@psu.edu
 C @ running: ./NetCDF2GRIB_V4 netcdfouputfile
 C @ output : netcdfoutputfile.gb
