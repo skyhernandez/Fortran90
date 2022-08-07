@@ -42,7 +42,7 @@
 !
 !  AUTHOR: 
 !
-!  Michael Kevin Hernandez, email: michael.hernandez@ou.edu (05/24/2011)
+!  Skylar Hernandez, (05/24/2011)
 !
 !-----------------------------------------------------------------------
 !
